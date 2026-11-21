@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel de administración | Aura Girls </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="panel-admin.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <h1>Aura Girls</h1>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+
+            <a href="catalogo.html">Catálogo</a>
+
+            <a href="ubicacion.html">Ubicación</a>
+
+            <a href="contacto.html">Contacto</a>
+
+            <a href="comentarios.html">Comentarios</a>
+
+            <a href="horarios.html">Horarios</a>
+
+            <a href="envios.html">Envíos</a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="panel-admin">
+
+        <h2>Panel de administración</h2>
+
+        <p>Gestioná los productos de Aura Girls.</p>
+
+
+        <section class="formulario-producto">
+
+            <h3>Agregar o modificar producto</h3>
+
+
+            <form id="formulario-producto">
+
+                <input
+                    type="hidden"
+                    id="indice-producto"
+                >
+
+
+                <label for="nombre-producto">
+
+                    Nombre del producto:
+
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre-producto"
+                    required
+                >
+
+
+                <label for="descripcion-producto">
+
+                    Descripción:
+
+                </label>
+
+                <textarea
+                    id="descripcion-producto"
+                    required
+                ></textarea>
+
+
+                <label for="precio-producto">
+
+                    Precio:
+
+                </label>
+
+                <input
+                    type="number"
+                    id="precio-producto"
+                    required
+                >
+
+
+                
+
+
+                <label for="categoria-producto">
+
+                    Categoría:
+
+                </label>
+
+                <select
+                    id="categoria-producto"
+                    required
+                >
+
+                    <option value="fundas">
+
+                        Fundas
+
+                    </option>
+
+                    <option value="accesorios">
+
+                        Accesorios
+
+                    </option>
+
+                    <option value="vidrios">
+
+                        Vidrios templados
+
+                    </option>
+
+                    <option value="promos">
+
+                        Promos
+
+                    </option>
+
+                </select>
+
+
+
+                <!-- ======================================
+     OPCIONES DEL PRODUCTO
+====================================== -->
+
+<div id="seccion-modelos">
+
+    <label>
+        Opciones del producto:
+    </label>
+
+    <div id="lista-modelos-admin">
+        <!-- Las opciones agregadas aparecerán aquí -->
+    </div>
+
+    <div class="agregar-modelo">
+
+        <input
+            type="text"
+            id="nuevo-modelo"
+            placeholder="Ej: 17 Pro Max"
+        >
+
+        <select id="disponibilidad-modelo">
+
+            <option value="true">
+                Disponible
+            </option>
+
+            <option value="false">
+                Agotado
+            </option>
+
+        </select>
+
+        <button
+            type="button"
+            id="btn-agregar-modelo"
+        >
+            + Agregar opción
+        </button>
+
+    </div>
+
+</div>
+
+<label for="imagen-producto">
+    Imagen:
+</label>
+
+<input
+    type="file"
+    id="imagen-producto"
+   accept="image/*"
+   multiple
+>
+
+
+
+                <label for="disponibilidad-producto">
+
+                    Disponibilidad:
+
+                </label>
+
+                <select
+                    id="disponibilidad-producto"
+                >
+
+                    <option value="true">
+
+                        Disponible
+
+                    </option>
+
+                    <option value="false">
+
+                        No disponible
+
+                    </option>
+
+                </select>
+
+
+                <button
+                    type="submit"
+                    class="boton-guardar"
+                >
+
+                    Guardar producto
+
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="productos-admin">
+
+    <h3>Productos registrados</h3>
+
+    <!-- BUSCADOR DE PRODUCTOS -->
+
+    <div class="buscador-admin">
+
+        <input
+            type="text"
+            id="buscador-admin"
+            placeholder="🔎 Buscar producto por nombre..."
+        >
+
+    </div>
+
+    <div id="lista-productos-admin">
+
+    </div>
+
+</section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+
+            © 2026 Aura Girls - Todos los derechos reservados.
+
+        </p>
+
+    </footer>
+
+
+    <script type="module" src="panel.js"></script>
+
+</body>
+
+</html>

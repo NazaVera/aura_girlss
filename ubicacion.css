@@ -1,0 +1,172 @@
+/* =========================
+   PÁGINA DE UBICACIÓN
+========================= */
+
+body {
+   background-image: url(../Aura.girls/fondo3.jpeg);
+}
+
+
+
+
+
+.ubicacion {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.ubicacion h2 {
+    font-size: 36px;
+    margin-bottom: 15px
+}
+
+.ubicacion > p {
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   INFORMACIÓN Y MAPA
+========================= */
+
+.informacion-ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   DATOS DE UBICACIÓN
+========================= */
+
+.datos-ubicacion {
+    flex: 1;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    background-color: #FFF9F2;
+    border: 1px solid #D8BFA8;
+    box-shadow: 0 5px 15px rgba(74, 44, 32, 0.15);
+}
+
+.datos-ubicacion h3 {
+    margin-top: 20px;
+    color: #4A2C20;
+}
+
+.datos-ubicacion h3:first-child {
+    margin-top: 0;
+}
+
+.datos-ubicacion p {
+    line-height: 1.6;
+    color: #6B5145;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.boton-ubicacion {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #6B4535;
+    color: white;
+    transition: 0.3s;
+}
+
+.boton-ubicacion:hover {
+    background-color: #4A2C20;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   MAPA
+========================= */
+
+.mapa {
+    flex: 1;
+    min-height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(74, 44, 32, 0.15);
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    border: none;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .ubicacion {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .ubicacion h2 {
+        font-size: 28px;
+    }
+
+    .ubicacion > p {
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .informacion-ubicacion {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .datos-ubicacion {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        border-radius: 18px;
+    }
+
+    .datos-ubicacion h3 {
+        font-size: 20px;
+    }
+
+    .datos-ubicacion p {
+        line-height: 1.5;
+        overflow-wrap: break-word;
+    }
+
+    .boton-ubicacion {
+        max-width: 100%;
+        padding: 11px 16px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 300px;
+        min-height: 300px;
+        border-radius: 18px;
+    }
+
+    .mapa iframe {
+        width: 100%;
+        height: 300px;
+        min-height: 300px;
+    }
+
+}

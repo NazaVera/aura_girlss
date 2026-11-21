@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Acceso administrador | Aura Girls</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>Aura Girls</h1>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+
+            <a href="catalogo.html">Catálogo</a>
+
+            <a href="ubicacion.html">Ubicación</a>
+
+            <a href="contacto.html">Contacto</a>
+
+            <a href="comentarios.html">Comentarios</a>
+
+            <a href="horarios.html">Horarios</a>
+
+            <a href="envios.html">Envíos</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main>
+
+        <section class="login">
+
+            <div class="login-contenedor">
+
+                <div class="icono-admin">
+
+                    👤
+
+                </div>
+
+
+                <h2>Acceso administrador</h2>
+
+
+                <p>
+                    Ingresá tus datos para acceder al panel de administración.
+                </p>
+
+
+                <form id="formulario-login">
+
+
+                    <label for="usuario">
+
+                        Usuario:
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        required
+                    >
+                       
+                    
+                    <label for="contrasena">
+
+                        Contraseña:
+
+                    </label>
+                     
+
+                    
+                    <div class="contenedor-contrasena">
+
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        required
+                    >
+
+
+                     <button type="button"
+                            id="mostrar-contrasena"
+                            aria-label="mostrar contraseña"
+                            >👁‍🗨</button>
+                     </div>
+
+                    <button
+                        class="boton-login"
+                        type="submit">
+                        Ingresar
+                    </button>
+
+
+                    <p
+                        id="mensaje-login"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Aura Girls - Todos los derechos reservados.
+
+        </p>
+
+    </footer>
+
+
+    <script type="module" src="login.js"></script>
+
+</body>
+
+</html>

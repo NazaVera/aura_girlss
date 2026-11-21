@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Envíos y retiros | Aura Girls</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="envios.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+
+        <div class="logo">
+            <h1>Aura Girls</h1>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="comentarios.html">Comentarios</a>
+            <a href="horarios.html">Horarios</a>
+            <a href="envios.html">Envíos</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- TÍTULO -->
+
+        <section class="titulo-envios">
+
+            <h2>Envíos y retiros</h2>
+
+            <p>
+                Elegí cómo querés recibir tu pedido.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             RETIRO POR EL LOCAL
+        ========================== -->
+
+        <section class="opcion-envio" id="seccion-retiro">
+
+            <h3>🏪 Retiro por el local</h3>
+
+            <p>
+                Podés retirar tu pedido directamente por nuestro local.
+            </p>
+
+            <p>
+                Para conocer nuestra ubicación y los horarios disponibles,
+                consultá los siguientes enlaces:
+            </p>
+
+
+            <div class="botones-info">
+
+                <a href="ubicacion.html" class="btn-info">
+                    📍 Ver ubicación
+                </a>
+
+                <a href="horarios.html" class="btn-info">
+                    🕐 Ver horarios
+                </a>
+
+            </div>
+
+            <button type="button" class="btn-confirmar-envio" onclick="confirmarRetiro()"> Confirmar retiro </button>
+
+
+        </section>
+
+
+        <!-- =========================
+             ENVÍO A DOMICILIO
+        ========================== -->
+
+        <section class="opcion-envio" id="seccion-domicilio">
+
+            <h3>🛵 Envío a domicilio</h3>
+
+        <p>Selecciona esta opcion para completar los datos necesarios 
+            y poder coordinar la entrega </p>
+
+           <button
+    type="button"
+    class="btn-domicilio"
+    onclick="mostrarDomicilio()"
+>
+    Solicitar envío a domicilio
+</button>
+
+
+            <!-- FORMULARIO DOMICILIO -->
+
+            <div
+                id="formulario-domicilio"
+                class="formulario-envio"
+            >
+
+                <h4>📦 Datos para el envío</h4>
+
+                <p>
+                    Completá tus datos para que podamos realizar la entrega.
+                </p>
+
+
+                <form id="form-domicilio">
+
+
+                
+
+
+                    <label for="direccion">
+                        Dirección:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="direccion"
+                        placeholder="Calle y número"
+                        required
+                    >
+
+
+                    <label for="codigo-postal">
+                        Código postal:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="codigo-postal"
+                        required
+                    >
+
+
+                    <label for="telefono-envio">
+                        Teléfono:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="telefono-envio"
+                        placeholder="Número de contacto"
+                        required
+                    >
+
+
+                    <label for="referencia">
+                        Referencia del domicilio:
+                    </label>
+
+                    <textarea
+                        id="referencia"
+                        placeholder="Ej.: casa con rejas negras, departamento 2..."
+                    ></textarea>
+
+
+
+                    <button
+                        type="submit"
+                        class="btn-confirmar-envio"
+                    >
+                        Confirmar envío
+                    </button>
+
+                </form>
+                
+              <p>
+  Comunicate a nuestro WhatsApp para terminar de coordinar:
+  <a href="https://wa.me/542645153473" target="_blank">
+    264 515-3473
+  </a>
+</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ENVÍO AL INTERIOR
+        ========================== -->
+
+        <section class="opcion-envio" id="seccion-interior">
+
+            <h3>📦 Envío al interior</h3>
+
+            <p>
+                Si te encontrás fuera de nuestra zona de reparto,
+                podemos coordinar un envío al interior.
+            </p>
+
+            <p>
+                Seleccioná esta opción para completar los datos
+                necesarios para coordinar el envío.
+            </p>
+
+
+           <button
+    type="button"
+    class="btn-interior"
+    onclick="mostrarInterior()"
+>
+    Solicitar envío al interior
+</button>
+
+            <!-- FORMULARIO INTERIOR -->
+
+            <div
+                id="formulario-interior"
+                class="formulario-envio"
+            >
+
+                <h4>📦 Datos para envío al interior</h4>
+
+
+                <form id="form-interior">
+
+
+                    <label for="provincia">
+                        Provincia:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="provincia"
+                        required
+                    >
+
+
+                    <label for="localidad">
+                        Localidad:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="localidad"
+                        required
+                    >
+
+
+                    <label for="direccion-interior">
+                        Dirección:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="direccion-interior"
+                        placeholder="Calle y número"
+                        required
+                    >
+
+
+                    <label for="codigo-postal-interior">
+                        Código postal:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="codigo-postal-interior"
+                        required
+                    >
+
+
+                    <label for="telefono-interior">
+                        Teléfono:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="telefono-interior"
+                        required
+                    >
+
+
+                    <label for="referencia-interior">
+                        Referencia o indicaciones:
+                    </label>
+
+                    <textarea
+                        id="referencia-interior"
+                        placeholder="Información adicional para encontrar el domicilio"
+                    ></textarea>
+
+
+                    <p>
+                        <strong>
+                            El costo y el medio de envío serán informados
+                            una vez revisados los datos.
+                        </strong>
+                    </p>
+
+
+                    <button
+                        type="submit"
+                        class="btn-confirmar-envio"
+                    >
+                        Confirmar datos de envío
+                    </button>
+
+                </form>
+
+                 <p>
+  Comunicate a nuestro WhatsApp para terminar de coordinar:
+  <a href="https://wa.me/542645153473" target="_blank">
+    264 515-3473
+  </a>
+</p>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- VOLVER -->
+
+        <div class="volver">
+
+            <a href="catalogo.html">
+                ← Volver al pedido
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- PIE -->
+
+    <footer>
+
+        <p>
+            © 2026 Aura Girls - Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="envios.js"></script>
+    
+</body>
+
+</html>

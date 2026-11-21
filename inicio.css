@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background-image: url("../Aura.girls/fondo7.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    font-family: Arial, sans-serif;
+
+    color: bisque;
+}
+
+
+.admin-inicio {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+}
+
+
+.admin-inicio h1 {
+
+    margin: 0;
+
+    font-size: 42px;
+
+    color: bisque;
+
+}
+
+
+.admin-inicio h2 {
+
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+
+    font-size: 28px;
+
+}
+
+
+.subtitulo {
+
+    margin-bottom: 35px;
+
+    color: bisque;
+
+}
+
+
+.opciones-admin {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    width: 100%;
+
+    max-width: 900px;
+
+}
+
+
+.opcion-admin {
+
+    width: 330px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    color: brown;
+
+    background-color: rgba(255, 250, 242, 0.95);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(53, 23, 5, 0.18);
+
+    transition: 0.3s;
+
+}
+
+
+.opcion-admin:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(53, 23, 5, 0.25);
+
+}
+
+
+.icono-admin {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.opcion-admin h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.opcion-admin p {
+
+    color: #6b4328;
+
+    line-height: 1.5;
+
+}
+
+
+@media (max-width: 700px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .admin-inicio {
+        width: 100%;
+        min-height: 100vh;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .admin-inicio h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .admin-inicio h2 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .subtitulo {
+        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .opciones-admin {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .opcion-admin {
+        width: 100%;
+        max-width: 350px;
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+    .icono-admin {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .opcion-admin h3 {
+        font-size: 20px;
+    }
+
+    .opcion-admin p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+}

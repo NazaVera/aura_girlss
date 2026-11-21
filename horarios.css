@@ -1,0 +1,207 @@
+/* =========================
+   PÁGINA DE HORARIOS
+========================= */
+
+body {
+     background-image: url(../Aura.girls/fondo6.jpeg); 
+}
+
+
+
+
+.horarios {
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+}
+
+
+.horarios h2 {
+
+    font-size: 36px;
+
+    color: #4A2C20;
+
+    margin-bottom: 10px;
+
+}
+
+
+.horarios > p {
+
+    color: #6B5145;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================
+   TABLA DE HORARIOS
+========================= */
+
+.tabla-horarios {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    background-color: #FFF9F2;
+
+    border: 1px solid #D8BFA8;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    box-shadow: 0 5px 15px rgba(74, 44, 32, 0.15);
+
+}
+
+
+.dia {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #D8BFA8;
+
+    color: #4A2C20;
+
+}
+
+
+.dia:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.dia span:last-child {
+
+    font-weight: bold;
+
+    color: #6B4535;
+
+}
+
+
+/* =========================
+   DOMINGO CERRADO
+========================= */
+
+.dia.cerrado {
+
+    color: #8B5E4A;
+
+}
+
+
+.dia.cerrado span:last-child {
+
+    color: #8B5E4A;
+
+}
+
+
+/* =========================
+   MENSAJE FINAL
+========================= */
+
+.mensaje-horarios {
+
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    padding: 25px;
+
+    background-color: #FFF9F2;
+
+    border: 1px solid #D8BFA8;
+
+    border-radius: 20px;
+
+}
+
+
+.mensaje-horarios h3 {
+
+    color: #4A2C20;
+
+}
+
+
+.mensaje-horarios p {
+
+    color: #6B5145;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .horarios {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .horarios h2 {
+        font-size: 28px;
+    }
+
+    .horarios > p {
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .tabla-horarios {
+        width: 100%;
+        max-width: none;
+        padding: 12px;
+        border-radius: 18px;
+    }
+
+    .dia {
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .dia span {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .mensaje-horarios {
+        width: 100%;
+        max-width: none;
+        margin-top: 25px;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .mensaje-horarios h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .mensaje-horarios p {
+        line-height: 1.5;
+    }
+
+}

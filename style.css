@@ -1,0 +1,257 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    background-image: url("../Aura.girls/fondo1.jpeg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    font-family: Georgia, serif;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+/* IMAGEN DE PERFIL */
+
+.perfil {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+}
+
+.perfil img {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+}
+
+
+/* LOGO */
+
+header {
+
+    margin-top: 20px;
+
+    margin-bottom: 35px;
+
+    color: #8c4350;
+
+}
+
+header img {
+
+    width: 260px;
+
+    height: auto;
+
+    border-radius: 30px;
+
+}
+
+
+/* BOTONES */
+
+.catalogo{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.boton {
+
+    width: 600px;
+
+    max-width: 85vw;
+
+    padding: 25px;
+
+    border-radius: 50px;
+
+    background-color: #e7c99f;
+
+    color: #8c4350;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    transition: 0.3s;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.boton:hover {
+
+    background-color: #d9b986;
+
+    transform: scale(1.03);
+
+}
+
+
+/* INSTAGRAM */
+
+footer {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 35px;
+
+    margin-bottom: 20px;
+
+    color: white;
+
+    font-size: 24px;
+
+}
+
+footer img {
+
+    width: 45px;
+
+    height: 45px;
+
+}
+
+
+.icono-admin {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.icono-admin img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   ADAPTACIÓN PARA CELULARES
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+
+    /* ICONO DE PERFIL */
+    .perfil {
+        top: 10px;
+        left: 10px;
+    }
+
+    .perfil img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* LOGO */
+    header {
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    header img {
+        width: min(260px, 80vw);
+        height: auto;
+    }
+
+    /* CONTENEDOR DE BOTONES */
+    .catalogo {
+        width: 100%;
+        gap: 15px;
+    }
+
+    /* BOTONES */
+    .boton {
+        width: 100%;
+        max-width: 500px;
+        padding: 18px 15px;
+        font-size: 22px;
+        border-radius: 35px;
+        gap: 15px;
+    }
+
+    /* PIE DE PÁGINA */
+    footer {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    footer img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* ICONO ADMIN */
+    .icono-admin {
+    top: 10px;
+    right: 10px;
+}
+
+.icono-admin img {
+    width: 38px;
+    height: 38px;
+}
+}

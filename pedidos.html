@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Pedidos - Aura Girls</title>
+
+    <link
+        rel="stylesheet"
+        href="pedidos.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <main class="pedidos-admin">
+
+
+        <!-- =========================
+             ENCABEZADO
+        ========================== -->
+
+        <header class="encabezado-pedidos">
+
+            <div>
+
+                <h1>
+                    Pedidos
+                </h1>
+
+                <p>
+                    Pedidos realizados desde Aura Girls
+                </p>
+
+            </div>
+
+
+            <a
+                href="inicio.html"
+                class="btn-volver"
+            >
+                ← Volver
+            </a>
+
+        </header>
+
+
+
+        <!-- =========================
+             BUSCADOR
+        ========================== -->
+
+       
+        <div class="filtros-pedidos">
+
+    <input
+        type="text"
+        id="buscador-pedidos"
+        placeholder="Buscar por nombre, teléfono o email..."
+    >
+
+    <div class="botones-filtro">
+
+        <button
+            type="button"
+            class="filtro-estado activo"
+            data-estado="todos"
+        >
+            Todos
+        </button>
+
+        <button
+            type="button"
+            class="filtro-estado"
+            data-estado="pendiente"
+        >
+            Pendientes
+        </button>
+
+        <button
+            type="button"
+            class="filtro-estado"
+            data-estado="entregado"
+        >
+            Entregados
+        </button>
+
+    </div>
+
+</div>
+
+
+
+        <!-- =========================
+             RESUMEN
+        ========================== -->
+
+        <section class="resumen-pedidos">
+
+
+            <div class="resumen">
+
+                <span>
+                    Total de pedidos
+                </span>
+
+                <strong id="total-pedidos">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="resumen">
+
+                <span>
+                    Pedidos a domicilio
+                </span>
+
+                <strong id="total-domicilio">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="resumen">
+
+                <span>
+                    Pedidos para retiro
+                </span>
+
+                <strong id="total-retiro">
+                    0
+                </strong>
+
+            </div>
+
+
+
+            <div class="resumen">
+
+               <span>
+                Pedidos al interior
+               </span>
+
+               <strong  id="total-interior">
+                   0
+               </strong>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             LISTA DE PEDIDOS
+        ========================== -->
+
+        <section
+            id="lista-pedidos"
+            class="lista-pedidos"
+        >
+
+            <!--
+                Los pedidos se mostrarán
+                automáticamente mediante JavaScript.
+            -->
+
+        </section>
+
+
+    </main>
+
+
+
+    <script type="module" src="pedidos.js"></script>
+
+</body>
+
+</html>

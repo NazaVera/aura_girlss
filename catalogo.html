@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catalogo | Aura Girls</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+
+<body>
+
+     <!-- CARRITO FLOTANTE -->
+<button id="btn-carrito-flotante" class="btn-carrito-flotante">
+    🛒
+    <span id="contador-carrito">0</span>
+</button>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="logo">
+            <h1>Aura Girls</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="comentarios.html">Comentarios</a>
+            <a href="horarios.html">Horarios</a>  
+            <a href="envios.html">Envíos</a>
+        </nav>
+
+    </header>
+
+
+    <!-- TÍTULO DEL MENÚ -->
+    <main>
+
+        <section class="titulo-menu">
+
+            <h2>Nuestro Catálogo</h2>
+
+            <p>
+                Tu celular también merece un poco de estilo, mira nuestro catálogo de fundas, accesorios y más.
+            </p>
+
+        </section>
+
+
+          <section class="titulo-canal">
+            <h3 class="titulo-canal">Sigue nuestro canal en whatsapp</h3>
+        <a href=" https://whatsapp.com/channel/0029VbAmEpKCRs1g8BaMaS1z" target="_blank" class="boton"> Ir al canal</a>
+
+         </section>
+
+         
+        <!-- BUSCADOR -->
+        <section class="busqueda">
+
+            <input
+                type="text"
+                id="buscador"
+                placeholder="🔎 Buscar un producto..."
+            >
+
+        </section>
+
+
+        <!-- FILTROS -->
+        <section class="filtros">
+
+            <button class="filtro activo" data-categoria="todos">
+                Todos
+            </button>
+
+            <button class="filtro" data-categoria="fundas">
+                Fundas
+            </button>
+
+            <button class="filtro" data-categoria="accesorios">
+                Accesorios
+            </button>
+
+            <button class="filtro" data-categoria="vidrios">
+                Vidrios templados
+            </button>
+
+            <button class="filtro" data-categoria="promos">
+                Promos
+            </button>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
+        <section class="productos" id="productos">
+
+        </section>
+        <!-- =========================
+     MODAL PRODUCTO
+========================= --><div id="modal-producto" class="modal-producto"><div class="modal-contenido">
+
+    <button
+        type="button"
+        id="cerrar-modal"
+        class="cerrar-modal"
+    >
+        ✕
+    </button>
+
+   <div class="modal-imagen">
+
+    <img
+        id="modal-imagen"
+        src=""
+        alt="Producto"
+    >
+
+    <div
+        id="modal-miniaturas"
+        class="modal-miniaturas"
+    >
+    </div>
+
+</div>
+
+
+    <div class="modal-informacion">
+
+        <h2 id="modal-nombre"></h2>
+
+        <p id="modal-descripcion"></p>
+
+        <p class="modal-precio">
+            $<span id="modal-precio"></span>
+        </p>
+
+        <p id="modal-disponibilidad"></p>
+
+        <div id="modal-modelos"></div>
+
+        <button
+            type="button"
+            id="modal-agregar"
+            class="modal-agregar"
+        >
+            🛒 Agregar al pedido
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+        <!-- CARRITO -->
+
+        <section class="carrito">
+
+            <h2>🛒 Mí pedido</h2>
+
+            <div id="lista-carrito">
+
+                <p>
+                    Todavía no agregaste productos.
+                </p>
+
+            </div>
+
+            <h3>
+                Total:
+                $<span id="total">0</span>
+            </h3>
+
+            <button
+    type="button"
+    id="btn-continuar-datos"
+    class="btn-continuar-datos"
+>
+    Continuar con mis datos →
+</button>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+
+        <section class="formulario-pedido">
+
+            <h2>Realizar pedido</h2>
+
+            <form id="formulario-pedido">
+
+
+                <label for="nombre">
+                    Nombre y apellido:
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    required
+                >
+
+
+                <label for="telefono">
+                    Teléfono:
+                </label>
+
+                <input
+                    type="text"
+                    id="telefono"
+                    required
+                >
+
+
+                <label for="email">
+                    Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required
+                >
+
+
+                <label for="comentario">
+                    Comentário opcional:
+                </label>
+
+                <textarea
+                    id="comentario"
+                    placeholder="¿Querés agregar alguna indicación?"
+                ></textarea>
+
+
+                
+
+<!-- =========================
+     FORMA DE ENTREGA
+========================== -->
+
+<label for="tipo-entrega">
+    ¿Cómo querés recibir tu pedido?
+</label>
+
+<select id="tipo-entrega" required>
+
+    <option value="">
+        Seleccioná una opción
+    </option>
+
+    <option value="retiro">
+        🏪 Retiro por el local
+    </option>
+
+    <option value="domicilio">
+        🛵 Envío a domicilio
+    </option>
+
+    <option value="interior">
+        📦 Envío al interior
+    </option>
+
+</select>
+
+<button
+    type="button"
+    id="btn-continuar-envio"
+    class="btn-confirmar-envio"
+>
+    Continuar con el envío
+</button>
+
+
+<!-- =========================
+     MÉTODO DE PAGO
+========================== -->
+
+<label for="pago">
+    Método de pago:
+</label>
+
+<select id="pago" required>
+
+    <option value="">
+        Seleccioná un método de pago
+    </option>
+
+    <option value="efectivo">
+        Efectivo
+    </option>
+
+    <option value="transferencia">
+        Transferencia bancaria
+    </option>
+
+</select>
+
+
+<!-- DATOS DE TRANSFERENCIA -->
+
+<div
+    id="datos-transferencia"
+    class="datos-transferencia"
+>
+
+    <h3>💳 Datos para realizar la transferencia</h3>
+
+    <p>
+        <strong>Alias:</strong><br>
+        aura.fundas25
+    </p>
+
+    <p>
+        <strong>Nombre completo:</strong><br>
+        Yesica Yanina Pernini
+    </p>
+
+    <p>
+        <strong>Banco:</strong><br>
+        Brubank
+    </p>
+
+    <p>
+        <strong>N.º de cuenta:</strong><br>
+        1300484989001
+    </p>
+
+    <p>
+        <strong>CUIT:</strong><br>
+        27-40728590-0
+    </p>
+
+    <p>
+        <strong>CVU:</strong><br>
+        1430001713004849890011
+    </p>
+
+    <label for="comprobante">
+        <strong>Comprobante de transferencia:</strong>
+    </label>
+
+    <input
+        type="file"
+        id="comprobante"
+        accept="image/*,.pdf,application/pdf"
+    >
+
+</div>
+
+
+
+
+
+<button
+    type="submit"
+    class="btn-confirmar"
+>
+    Confirmar pedido
+</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 Aura Girls - Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script type="module" src="catalogo.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+
+
+body {
+     background-image: url(../Aura.girls/fondo8.jpeg);
+}
+
+
+.opcion-envio {
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fffaf3;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.zonas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn-domicilio,
+.btn-zona,
+.btn-interior,
+.btn-info,
+.btn-aceptar,
+.btn-confirmar-envio {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #351705;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.precio-envio,
+.formulario-envio {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f3e4cf;
+    border-radius: 10px;
+}
+
+.formulario-envio form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-envio label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-envio input,
+.formulario-envio textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #c8a77b;
+    border-radius: 8px;
+}
+
+.formulario-envio textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.costo-final {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.botones-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.volver {
+    text-align: center;
+    margin: 40px;
+}
+
+.volver a {
+    color: #351705;
+    font-weight: bold;
+}
+
+.pie-envios {
+    text-align: center;
+    margin: 40px 0 25px;
+}
+
+.pie-envios a {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #351705;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pie-envios a:hover {
+    background-color: #5a2d0c;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE - CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .opcion-envio {
+        width: calc(100% - 30px);
+        max-width: none;
+        margin: 20px 15px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .zonas {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-domicilio,
+    .btn-zona,
+    .btn-interior,
+    .btn-info,
+    .btn-aceptar,
+    .btn-confirmar-envio {
+        width: 100%;
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .precio-envio,
+    .formulario-envio {
+        width: 100%;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .formulario-envio input,
+    .formulario-envio textarea {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .formulario-envio textarea {
+        min-height: 90px;
+    }
+
+    .costo-final {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .botones-info {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .volver {
+        margin: 25px 15px;
+    }
+
+    .pie-envios {
+        margin: 25px 15px 20px;
+    }
+
+    .pie-envios a {
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+}

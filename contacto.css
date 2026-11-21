@@ -1,0 +1,307 @@
+/* =========================
+   PÁGINA DE CONTACTO
+========================= */
+
+body {
+     background-image: url(../Aura.girls/fondo4.jpeg); 
+}
+
+.contacto {
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+}
+
+
+.contacto h2 {
+
+    font-size: 36px;
+
+    color: #4A2C20;
+
+    margin-bottom: 10px;
+
+}
+
+
+.contacto > p {
+
+    color: #6B5145;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.contenido-contacto {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 40px;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.informacion-contacto {
+
+    flex: 1;
+
+    padding: 30px;
+
+    text-align: left;
+
+    background-color: #FFF9F2;
+
+    border: 1px solid #D8BFA8;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(74, 44, 32, 0.15);
+
+}
+
+
+.informacion-contacto h3 {
+
+    color: #4A2C20;
+
+    margin-bottom: 20px;
+
+}
+
+
+.informacion-contacto p {
+
+    color: #6B5145;
+
+    margin: 20px 0;
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================
+   REDES SOCIALES
+========================= */
+
+.redes-sociales {
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.red-social {
+
+    padding: 10px 15px;
+
+    background-color: #6B4535;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+}
+
+
+.red-social:hover {
+
+    background-color: #4A2C20;
+
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario-contacto {
+
+    flex: 1;
+
+    padding: 30px;
+
+    text-align: left;
+
+    background-color: #FFF9F2;
+
+    border: 1px solid #D8BFA8;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(74, 44, 32, 0.15);
+
+}
+
+
+.formulario-contacto h3 {
+
+    color: #4A2C20;
+
+    margin-bottom: 20px;
+
+}
+
+
+.formulario-contacto form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.formulario-contacto label {
+
+    color: #4A2C20;
+
+    font-weight: bold;
+
+}
+
+
+.formulario-contacto input,
+
+.formulario-contacto textarea {
+
+    padding: 12px;
+
+    border: 1px solid #D8BFA8;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+}
+
+
+.formulario-contacto textarea {
+
+    min-height: 120px;
+
+    resize: vertical;
+
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.boton-enviar {
+
+    padding: 13px;
+
+    margin-top: 10px;
+
+    background-color: #6B4535;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+.boton-enviar:hover {
+
+    background-color: #4A2C20;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .contacto {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .contacto h2 {
+        font-size: 28px;
+    }
+
+    .contacto > p {
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .contenido-contacto {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .informacion-contacto,
+    .formulario-contacto {
+        width: 100%;
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .informacion-contacto h3,
+    .formulario-contacto h3 {
+        font-size: 21px;
+    }
+
+    .informacion-contacto p {
+        margin: 15px 0;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+
+    .red-social {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .boton-enviar {
+        width: 100%;
+    }
+
+}
